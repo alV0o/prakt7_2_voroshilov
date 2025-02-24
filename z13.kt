@@ -8,7 +8,7 @@ fun main(){
         val answer = readLine()!!.toInt()
         when (answer) {
             1 -> when {
-                !((x > -1 && x < 1) || (y < 1)) -> when {
+                (y>0) -> when {
                     (x * x + y * y <= 4.0) -> when {
                         (x * x + y * y <= 1.0) -> println("а - не входит")
                         else -> println("а - входит")
